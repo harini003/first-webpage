@@ -1,0 +1,164 @@
+.search-bar{
+    padding-left: 10px;
+    margin-left: 12px;
+    font-size: 16px;
+    display: flex;
+    flex: 1;
+    height: 29px;
+    border: 1px solid rgb(202, 199, 199);
+    border-radius: 2px;
+    box-shadow: inset 1px 2px 3px rgba(0,0,0,0.05);
+    width:0;
+}
+
+.search-bar::placeholder{
+    font-family: Roboto, Arial;
+    font-size: 15px;
+
+}
+
+.header{
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(213, 208, 208);
+    z-index: 2;
+}
+
+.left-section{
+    
+    display: flex;
+    align-items: center;
+}
+
+.middle-section{
+    flex: 1;
+    margin-left: 70px;
+    margin-right: 35px;
+    max-width: 300px;
+    display: flex;
+    align-items: center;
+}
+
+.right-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 150px;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+.notifications-icon-container{
+    position: relative;
+}
+
+.notifications-count{
+    background-color: rgb(199, 47, 47);
+    color: white;
+    border-radius: 10px;
+    font-size: 9px;
+    font-family: Roboto, Arial;
+    position: absolute;
+    top: -3px;
+    right:-4px;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+.upload, .apps, .bell, .mychannel{
+    height: 20px;
+    margin-right: 0;
+
+}
+
+.upload, .apps, .bell, .mychannel:hover{
+    cursor: pointer;
+}
+
+.mychannel{
+    border-radius: 10px;;
+}
+
+.hamburger-menu-icon{
+    width: 40px;
+    margin-left: 20px;
+    
+}
+
+.search-button{
+    border-color:  rgb(202, 199, 199);
+    border-style: solid;
+    border-radius: 2px;
+    height: 33px;
+}
+
+.search-button, .mic-button{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-button .tooltip, .mic-button .tooltip{
+    position: absolute;
+    background-color: gray;
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -30px;
+    opacity: 0;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.search-button:hover .tooltip, .mic-button:hover .tooltip{
+    opacity: 1;
+    transition: opacity 0.15s;
+
+}
+
+.search-button:hover{
+    cursor: pointer;
+}
+
+.search-icon{
+    width: 22px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+.mic-button{
+    border-radius: 20px;
+    height: 35px;
+    margin-left: 5px;
+    background-color: rgba(0, 0, 0,0.06);
+    border-color:  rgb(202, 199, 199);
+    border: none;
+}
+
+.mic-button:hover{
+    cursor: pointer;
+}
+.mic-icon{
+    width: 16px;
+    padding-right: 2px;
+    padding-left: 2px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
